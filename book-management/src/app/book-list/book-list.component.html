@@ -1,9 +1,0 @@
-<div class="book-list">
-  <h2>Book List</h2>
-  <button routerLink="/add">Add Book</button>
-  <ul>
-    <li *ngFor="let book of books">
-      <app-book [book]="book" (delete)="deleteBook($event)"></app-book>
-    </li>
-  </ul>
-</div>

@@ -1,8 +1,0 @@
-<div class="book-item">
-  <h3>{{ book.title }}</h3>
-  <p>{{ book.author }}</p>
-  <p>{{ book.publishedDate }}</p>
-  <p>{{ book.isbn }}</p>
-  <button [routerLink]="['/edit', book.id]">Edit</button>
-  <button (click)="onDelete()">Delete</button>
-</div>
