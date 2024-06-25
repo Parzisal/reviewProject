@@ -1,0 +1,18 @@
+<div class="book-form">
+  <h2>{{ bookId ? "Edit" : "Add" }} Book</h2>
+  <form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <label for="title">Title:</label>
+    <input id="title" formControlName="title" type="text" />
+
+    <label for="author">Author:</label>
+    <input id="author" formControlName="author" type="text" />
+
+    <label for="publishedDate">Published Date:</label>
+    <input id="publishedDate" formControlName="publishedDate" type="date" />
+
+    <label for="isbn">ISBN:</label>
+    <input id="isbn" formControlName="isbn" type="text" />
+
+    <button type="submit">{{ bookId ? "Update" : "Add" }}</button>
+  </form>
+</div>
